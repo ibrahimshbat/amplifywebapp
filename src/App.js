@@ -5,11 +5,11 @@ import { listNotes } from './graphql/queries';
 import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from './graphql/mutations';
 import { API, Storage } from 'aws-amplify';
 import Footer from './component/Footer';
-import Card from ' ./component/card';
+import Card from ' ./component/Card';
 const initialFormState = { name: '', description: '' }
 
 function App() {
-  const image = require('D:\Pics\Ibrahim2.jpg');
+  const image = require('./assest/Ibrahim2.jpg');
   const [notes, setNotes] = useState([]);
   const [formData, setFormData] = useState(initialFormState);
 
@@ -58,7 +58,7 @@ function App() {
   return (
     
     <div className="App">
-      <Card/>
+      <Card />
       <h1>My Notes App: Welcome</h1>
       <input
         onChange={e => setFormData({ ...formData, 'name': e.target.value})}
