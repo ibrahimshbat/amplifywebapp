@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-function Footer(){
+function Footer() {
 
-    return(
+    return (
         <div>
             <h2>
                 Amplify Copyright 2021
