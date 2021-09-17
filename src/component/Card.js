@@ -7,7 +7,7 @@ function Card(props){
             <div className = "cardInfo">
                 <p> Name: {props.name}</p>
                 <p> Age: {props.age}</p>
-                <p> Job Title: {job}</p>
+                <p> Job Title: {props.job}</p>
             </div>
 
         </div>
