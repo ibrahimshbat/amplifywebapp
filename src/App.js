@@ -5,7 +5,7 @@ import { listNotes } from './graphql/queries';
 import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from './graphql/mutations';
 import { API, Storage } from 'aws-amplify';
 import Footer from './component/Footer';
-import Card from ' ./component/Card';
+import Card from './component/card';
 const initialFormState = { name: '', description: '' }
 
 function App() {
