@@ -4,6 +4,7 @@ import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import { listNotes } from './graphql/queries';
 import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from './graphql/mutations';
 import { API, Storage } from 'aws-amplify';
+import Footer from './Footer';
 const initialFormState = { name: '', description: '' }
 
 function App() {
@@ -85,6 +86,7 @@ function App() {
         }
       </div>
       <AmplifySignOut />
+      <Footer/>
     </div>
   );
 }
